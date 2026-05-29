@@ -1,0 +1,136 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/sora';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Accent palette — RGB channel triplets consumed by the teal-* scale in
+     tailwind.config.js. Swap by setting data-theme on <html> (PaletteToggle). */
+  :root {
+    --bg: #f7f9fc;
+
+    /* Default — Turquoise / green */
+    --accent-50: 236 253 246;
+    --accent-100: 208 249 232;
+    --accent-200: 164 241 212;
+    --accent-300: 105 227 189;
+    --accent-400: 47 205 161;
+    --accent-500: 16 185 129;
+    --accent-600: 5 150 105;
+    --accent-700: 4 120 87;
+    --accent-800: 6 95 70;
+    --accent-900: 6 78 59;
+  }
+
+  /* Light blue */
+  [data-theme='blue'] {
+    --accent-50: 240 249 255;
+    --accent-100: 224 242 254;
+    --accent-200: 186 230 253;
+    --accent-300: 125 211 252;
+    --accent-400: 56 189 248;
+    --accent-500: 14 165 233;
+    --accent-600: 2 132 199;
+    --accent-700: 3 105 161;
+    --accent-800: 7 89 133;
+    --accent-900: 12 74 110;
+  }
+
+  /* SaaS purple */
+  [data-theme='purple'] {
+    --accent-50: 245 243 255;
+    --accent-100: 237 233 254;
+    --accent-200: 221 214 254;
+    --accent-300: 196 181 253;
+    --accent-400: 167 139 250;
+    --accent-500: 139 92 246;
+    --accent-600: 124 58 237;
+    --accent-700: 109 40 217;
+    --accent-800: 91 33 182;
+    --accent-900: 76 29 149;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg)] text-navy-900 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-teal-500/25 text-navy-900;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-teal-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-teal-700;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-500 via-teal-400 to-navy-400 bg-clip-text text-transparent;
+  }
+
+  .card-surface {
+    @apply rounded-3xl border border-navy-100 bg-white shadow-soft;
+  }
+
+  .mesh-bg {
+    background-image:
+      radial-gradient(40% 50% at 15% 20%, rgb(var(--accent-500) / 0.22), transparent 60%),
+      radial-gradient(45% 55% at 85% 15%, rgba(79, 114, 191, 0.28), transparent 60%),
+      radial-gradient(50% 60% at 60% 90%, rgb(var(--accent-500) / 0.16), transparent 60%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Range slider styling */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgb(var(--accent-500)) var(--val, 50%), #d6e1f4 var(--val, 50%));
+  outline: none;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 3px solid rgb(var(--accent-500));
+  box-shadow: 0 4px 12px rgb(var(--accent-500) / 0.4);
+  cursor: pointer;
+}
+input[type='range']::-moz-range-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 3px solid rgb(var(--accent-500));
+  box-shadow: 0 4px 12px rgb(var(--accent-500) / 0.4);
+  cursor: pointer;
+}
