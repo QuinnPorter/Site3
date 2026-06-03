@@ -16,7 +16,7 @@ export default function Hero() {
   const secondary = lang === 'es' ? HERO_TAGLINE.en : HERO_TAGLINE.es
 
   return (
-    <section className="relative overflow-hidden bg-[var(--bg)] pt-32 text-navy-900 sm:pt-36">
+    <section className="relative overflow-hidden bg-[var(--bg)] pt-[6.4rem] text-navy-900 sm:pt-[7.2rem]">
       <div className="mesh-bg absolute inset-0 opacity-70" />
 
       {/* Floating motifs */}
@@ -49,7 +49,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.08 }}
-            className="mt-6 text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl"
+            className="mt-6 text-[2.167rem] font-bold leading-[1.08] sm:text-[2.917rem] lg:text-[3.667rem]"
           >
             {primary.pre}
             <span className="gradient-text">{primary.accent}</span>
@@ -71,7 +71,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 max-w-xl text-lg text-navy-600"
+            className="mt-6 max-w-xl text-[1.042rem] text-navy-600"
           >
             {t.hero.subtitle}
           </motion.p>
