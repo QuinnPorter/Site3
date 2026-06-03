@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/layout/Header.jsx'
 import Footer from './components/layout/Footer.jsx'
-import PaletteToggle from './components/ui/PaletteToggle.jsx'
 import Home from './pages/Home.jsx'
 import StubPage from './pages/StubPage.jsx'
 
@@ -27,7 +26,6 @@ export default function App() {
         </Routes>
       </div>
       <Footer />
-      <PaletteToggle />
     </div>
   )
 }

@@ -10,6 +10,13 @@ export const LINKS = {
   instagram: 'https://www.instagram.com/jbscorp/?hl=en',
 }
 
+// Language-agnostic hero tagline — the hero always shows BOTH (Spanish first,
+// then English) regardless of the EN/ES toggle.
+export const HERO_TAGLINE = {
+  es: { pre: 'Contabilidad que ', accent: 'hace crecer tu dinero', post: '.' },
+  en: { pre: 'Accounting that ', accent: 'moves your money forward', post: '.' },
+}
+
 const en = {
   nav: {
     individualTax: 'Individual Tax',
@@ -22,7 +29,7 @@ const en = {
     careers: 'Careers',
     articles: 'Articles',
     contact: 'Contact',
-    book: 'Book Appointment',
+    book: 'Book an Appointment',
     payment: 'Make a Payment',
     portal: 'Client Portal',
     menu: 'Menu',
@@ -31,7 +38,7 @@ const en = {
     company: 'Company',
   },
   cta: {
-    book: 'Book your appointment',
+    book: 'Book an Appointment',
     getStarted: 'Get started',
     findService: 'Find your service',
     learnMore: 'Learn more',
@@ -47,7 +54,7 @@ const en = {
     titlePost: '.',
     subtitle:
       'Bilingual tax, bookkeeping, and CFO services for individuals and businesses — institutional-grade expertise delivered with a human touch, in all 50 states.',
-    primary: 'Book your appointment',
+    primary: 'Book an Appointment',
     secondary: 'Find your service',
     trust: [
       { value: '20+', label: 'years in business' },
@@ -68,7 +75,7 @@ const en = {
     ],
     resultTitle: 'Your recommended path',
     restart: 'Start over',
-    book: 'Book this service',
+    book: 'Book an Appointment',
     recommendations: {
       w2: {
         name: 'Personal Tax Preparation',
@@ -148,7 +155,7 @@ const en = {
     resultSub: 'From optimized deductions, cleaner books, and proactive planning.',
     disclaimer:
       'Illustrative estimate only — not tax advice or a guarantee. Your actual results depend on your specific situation.',
-    cta: 'Get your real number',
+    cta: 'Book an Appointment',
   },
   why: {
     eyebrow: 'Why JBS',
@@ -251,7 +258,7 @@ const en = {
     eyebrow: 'En Español',
     title: 'Hablamos tu idioma',
     body: 'Nuestro equipo bilingüe te acompaña en cada paso — impuestos, contabilidad y asesoría financiera, explicados con claridad en español.',
-    cta: 'Reserva tu cita',
+    cta: 'Reserva una Cita',
   },
   team: {
     eyebrow: 'Leadership',
@@ -284,7 +291,7 @@ const en = {
   finalCta: {
     title: 'Let’s move your money forward',
     subtitle: 'Book a free consultation today — in English or Spanish.',
-    book: 'Book your appointment',
+    book: 'Book an Appointment',
     contact: 'Contact us',
   },
   footer: {
@@ -302,7 +309,7 @@ const en = {
     intro: 'This page is part of the redesign and is outlined below. The home page is the fully-built showcase.',
     sectionsTitle: 'Planned sections',
     backHome: 'Back to home',
-    book: 'Book your appointment',
+    book: 'Book an Appointment',
   },
   pages: {
     individualTax: {

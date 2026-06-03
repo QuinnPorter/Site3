@@ -28,7 +28,7 @@ export default function TeamPreview() {
             <div className="group h-full rounded-3xl border border-navy-100 bg-white p-6 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-glow">
               {/* Photo slot — replace gradient avatar with a real headshot */}
               <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-navy-900 to-navy-700">
-                <span className="font-display text-4xl font-bold text-teal-300">{initials(m.name)}</span>
+                <span className="font-sans text-4xl font-bold text-teal-300">{initials(m.name)}</span>
                 <span className="absolute bottom-2 right-2 rounded-full bg-black/30 px-2 py-0.5 text-[10px] text-white/70 backdrop-blur">
                   photo slot
                 </span>

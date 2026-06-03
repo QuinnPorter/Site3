@@ -10,7 +10,7 @@ const es = {
     careers: 'Empleo',
     articles: 'Artículos',
     contact: 'Contacto',
-    book: 'Reservar Cita',
+    book: 'Reserva una Cita',
     payment: 'Hacer un Pago',
     portal: 'Portal de Clientes',
     menu: 'Menú',
@@ -19,7 +19,7 @@ const es = {
     company: 'Empresa',
   },
   cta: {
-    book: 'Reserva tu cita',
+    book: 'Reserva una Cita',
     getStarted: 'Comienza ahora',
     findService: 'Encuentra tu servicio',
     learnMore: 'Ver más',
@@ -35,7 +35,7 @@ const es = {
     titlePost: '.',
     subtitle:
       'Servicios bilingües de impuestos, contabilidad y CFO para personas y negocios — experiencia de nivel institucional con trato humano, en los 50 estados.',
-    primary: 'Reserva tu cita',
+    primary: 'Reserva una Cita',
     secondary: 'Encuentra tu servicio',
     trust: [
       { value: '20+', label: 'años de experiencia' },
@@ -56,7 +56,7 @@ const es = {
     ],
     resultTitle: 'Tu camino recomendado',
     restart: 'Empezar de nuevo',
-    book: 'Reservar este servicio',
+    book: 'Reserva una Cita',
     recommendations: {
       w2: {
         name: 'Preparación de Impuestos Personales',
@@ -136,7 +136,7 @@ const es = {
     resultSub: 'De deducciones optimizadas, libros más limpios y planeación proactiva.',
     disclaimer:
       'Estimación ilustrativa — no es asesoría fiscal ni una garantía. Tus resultados reales dependen de tu situación específica.',
-    cta: 'Obtén tu número real',
+    cta: 'Reserva una Cita',
   },
   why: {
     eyebrow: 'Por qué JBS',
@@ -239,7 +239,7 @@ const es = {
     eyebrow: 'In English',
     title: 'We speak your language',
     body: 'Our bilingual team is with you every step — taxes, bookkeeping, and financial guidance, explained clearly in English.',
-    cta: 'Book your appointment',
+    cta: 'Book an Appointment',
   },
   team: {
     eyebrow: 'Liderazgo',
@@ -272,7 +272,7 @@ const es = {
   finalCta: {
     title: 'Hagamos crecer tu dinero',
     subtitle: 'Reserva una consulta gratis hoy — en inglés o español.',
-    book: 'Reserva tu cita',
+    book: 'Reserva una Cita',
     contact: 'Contáctanos',
   },
   footer: {
@@ -290,7 +290,7 @@ const es = {
     intro: 'Esta página es parte del rediseño y se describe abajo. La página de inicio es la muestra completa.',
     sectionsTitle: 'Secciones planeadas',
     backHome: 'Volver al inicio',
-    book: 'Reserva tu cita',
+    book: 'Reserva una Cita',
   },
   pages: {
     individualTax: {

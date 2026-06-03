@@ -4,18 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Dark blue — brand "Dark Blue" #1e3667 anchored at navy-900 (most-used token).
         navy: {
-          50: '#eef3fb',
-          100: '#d6e1f4',
-          200: '#adc2e8',
-          300: '#7e9bd6',
-          400: '#4f72bf',
-          500: '#33539e',
-          600: '#264080',
-          700: '#1d3266',
-          800: '#142547',
-          900: '#0b1f3a',
-          950: '#071426',
+          50: '#eef2f9',
+          100: '#dde4f2',
+          200: '#bccbe6',
+          300: '#93acd4',
+          400: '#6c8cc0',
+          500: '#4f72ab',
+          600: '#3a5d97',
+          700: '#2c4d83',
+          800: '#24406f',
+          900: '#1e3667',
+          950: '#14243f',
         },
         // Accent scale is driven by CSS variables (see :root / [data-theme] in index.css)
         // so the whole palette can be swapped at runtime by the PaletteToggle.
@@ -32,10 +33,13 @@ export default {
           900: 'rgb(var(--accent-900) / <alpha-value>)',
         },
         ink: '#0a0f1c',
+        // Brand warm accents — use sparingly.
+        gold: '#ffdb49',
+        flame: '#cf531a',
       },
       fontFamily: {
-        display: ['"Sora Variable"', 'Sora', 'system-ui', 'sans-serif'],
-        sans: ['"Inter Variable"', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['"Libre Baskerville"', 'Georgia', 'serif'],
+        sans: ['"Montserrat Variable"', 'Montserrat', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 10px 40px -12px rgba(11, 31, 58, 0.18)',

@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowUpRight, Compass, Sparkles, TrendingUp, ShieldCheck } from 'lucide-react'
 import { useLanguage } from '../../i18n/LanguageContext.jsx'
-import { LINKS } from '../../i18n/en.js'
+import { LINKS, HERO_TAGLINE } from '../../i18n/en.js'
 import Button from '../ui/Button.jsx'
 
 function scrollToFinder() {
@@ -9,9 +9,11 @@ function scrollToFinder() {
 }
 
 export default function Hero() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
   const reduce = useReducedMotion()
   const loop = (anim) => (reduce ? {} : anim)
+  const primary = lang === 'es' ? HERO_TAGLINE.es : HERO_TAGLINE.en
+  const secondary = lang === 'es' ? HERO_TAGLINE.en : HERO_TAGLINE.es
 
   return (
     <section className="relative overflow-hidden bg-[var(--bg)] pt-32 text-navy-900 sm:pt-36">
@@ -42,21 +44,33 @@ export default function Hero() {
             {t.hero.badge}
           </motion.span>
 
+          {/* Bilingual tagline — current language leads, the other follows (always both). */}
           <motion.h1
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.08 }}
             className="mt-6 text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl"
           >
-            {t.hero.titlePre}
-            <span className="gradient-text">{t.hero.titleAccent}</span>
-            {t.hero.titlePost}
+            {primary.pre}
+            <span className="gradient-text">{primary.accent}</span>
+            {primary.post}
           </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.14 }}
+            className="mt-3 font-display text-xl text-navy-500 sm:text-2xl"
+          >
+            {secondary.pre}
+            {secondary.accent}
+            {secondary.post}
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.16 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-xl text-lg text-navy-600"
           >
             {t.hero.subtitle}
@@ -87,7 +101,7 @@ export default function Hero() {
           >
             {t.hero.trust.map((s) => (
               <div key={s.label}>
-                <div className="font-display text-3xl font-bold text-navy-900">{s.value}</div>
+                <div className="font-sans text-3xl font-bold tabular-nums text-navy-900">{s.value}</div>
                 <div className="text-sm text-navy-500">{s.label}</div>
               </div>
             ))}
@@ -105,7 +119,7 @@ export default function Hero() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs uppercase tracking-widest text-navy-200">Net cash flow</p>
-                <p className="font-display text-3xl font-bold text-white">$248,500</p>
+                <p className="font-sans text-3xl font-bold tabular-nums text-white">$248,500</p>
               </div>
               <span className="inline-flex items-center gap-1 rounded-full bg-teal-500/20 px-2.5 py-1 text-sm font-semibold text-teal-300">
                 <TrendingUp className="h-4 w-4" /> +18%
@@ -139,7 +153,7 @@ export default function Hero() {
             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
           >
             <p className="text-xs text-navy-200">Refund optimized</p>
-            <p className="font-display text-xl font-bold text-teal-400">+$3,240</p>
+            <p className="font-sans text-xl font-bold tabular-nums text-teal-400">+$3,240</p>
           </motion.div>
         </motion.div>
       </div>

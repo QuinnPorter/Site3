@@ -31,7 +31,7 @@ export default function BusinessTiers() {
               >
                 <div className="flex items-center justify-between">
                   <span
-                    className={`flex h-9 w-9 items-center justify-center rounded-full font-display text-sm font-bold ${
+                    className={`flex h-9 w-9 items-center justify-center rounded-full font-sans text-sm font-bold tabular-nums ${
                       featured ? 'bg-teal-500 text-white' : 'bg-teal-500/10 text-teal-700'
                     }`}
                   >

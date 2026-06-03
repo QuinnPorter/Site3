@@ -48,7 +48,7 @@ export default function Reviews() {
 
           <div className="flex justify-center gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-teal-500 text-teal-500" />
+              <Star key={i} className="h-5 w-5 fill-gold text-gold" />
             ))}
           </div>
 
@@ -63,7 +63,7 @@ export default function Reviews() {
                   “{review.quote}”
                 </p>
                 <div className="mt-7 flex items-center justify-center gap-3">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-navy-950 font-display text-sm font-bold text-teal-300">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-navy-950 font-sans text-sm font-bold text-teal-300">
                     {initials(review.name)}
                   </span>
                   <div className="text-left">

@@ -25,7 +25,7 @@ export default function StatsBand() {
               {s.items.map((item, i) => (
                 <Reveal key={item.label} delay={i * 0.08}>
                   <div>
-                    <div className="font-display text-4xl font-bold text-white sm:text-5xl">
+                    <div className="font-sans text-4xl font-bold tabular-nums text-white sm:text-5xl">
                       <Counter
                         value={item.value}
                         prefix={item.prefix}

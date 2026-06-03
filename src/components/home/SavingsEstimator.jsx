@@ -70,7 +70,7 @@ export default function SavingsEstimator() {
               <label className="text-sm font-medium text-navy-600">
                 {mode === 'individual' ? e.incomeLabel : e.revenueLabel}
               </label>
-              <span className="font-display text-xl font-bold text-navy-900">
+              <span className="font-sans text-xl font-bold tabular-nums text-navy-900">
                 ${amount.toLocaleString('en-US')}
               </span>
             </div>
@@ -119,7 +119,7 @@ export default function SavingsEstimator() {
               <Calculator className="h-4 w-4" />
               {e.resultLabel}
             </span>
-            <div className="mt-5 font-display text-5xl font-bold sm:text-6xl">
+            <div className="mt-5 font-sans text-5xl font-bold tabular-nums sm:text-6xl">
               ${display.toLocaleString('en-US')}
             </div>
             <p className="mt-3 max-w-sm text-sm text-navy-100">{e.resultSub}</p>
