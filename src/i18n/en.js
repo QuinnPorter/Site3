@@ -61,6 +61,7 @@ const en = {
       { value: '7,000+', label: 'returns filed yearly' },
       { value: '50', label: 'states served' },
     ],
+    offices: 'Offices in Lawrence & Methuen, MA',
   },
   finder: {
     eyebrow: 'Service finder',
@@ -208,7 +209,7 @@ const en = {
   },
   reviews: {
     eyebrow: 'Client love',
-    title: 'Trusted, and it shows',
+    title: 'Trusted by Communities',
     items: [
       {
         quote:

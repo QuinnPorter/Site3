@@ -43,7 +43,7 @@ export default {
       },
       boxShadow: {
         soft: '0 10px 40px -12px rgba(11, 31, 58, 0.18)',
-        glow: '0 0 0 1px rgb(var(--accent-500) / 0.25), 0 18px 50px -12px rgb(var(--accent-500) / 0.35)',
+        glow: '0 16px 40px -14px rgb(var(--accent-500) / 0.18)',
       },
       borderRadius: {
         '2xl': '1.25rem',

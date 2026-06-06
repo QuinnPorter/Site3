@@ -42,6 +42,7 @@ const es = {
       { value: '7,000+', label: 'declaraciones al año' },
       { value: '50', label: 'estados atendidos' },
     ],
+    offices: 'Oficinas en Lawrence y Methuen, MA',
   },
   finder: {
     eyebrow: 'Buscador de servicios',
@@ -189,7 +190,7 @@ const es = {
   },
   reviews: {
     eyebrow: 'Lo que dicen',
-    title: 'Confianza que se nota',
+    title: 'Con la confianza de las comunidades',
     items: [
       {
         quote:

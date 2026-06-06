@@ -25,7 +25,7 @@ export default function Reviews() {
 
   useEffect(() => {
     if (paused || reduce) return
-    const id = setInterval(() => setIndex((i) => (i + 1) % items.length), 5500)
+    const id = setInterval(() => setIndex((i) => (i + 1) % items.length), 4000)
     return () => clearInterval(id)
   }, [paused, reduce, items.length])
 
@@ -35,7 +35,7 @@ export default function Reviews() {
   return (
     <Section>
       <div className="flex flex-col items-center gap-6 text-center">
-        <SectionHeader eyebrow={t.reviews.eyebrow} title={t.reviews.title} />
+        <SectionHeader title={t.reviews.title} />
       </div>
 
       <div
@@ -55,9 +55,9 @@ export default function Reviews() {
           <div className="relative mt-6 min-h-[140px]">
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: 24 }}
+                initial={{ opacity: 0, x: 16 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               >
                 <p className="text-center text-xl font-medium leading-relaxed text-navy-800">
                   “{review.quote}”
