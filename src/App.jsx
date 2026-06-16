@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/layout/Header.jsx'
 import Footer from './components/layout/Footer.jsx'
 import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
 import StubPage from './pages/StubPage.jsx'
 
 export default function App() {
@@ -14,7 +15,7 @@ export default function App() {
           <Route path="/individual-tax" element={<StubPage pageKey="individualTax" />} />
           <Route path="/business" element={<StubPage pageKey="business" />} />
           <Route path="/business-tax" element={<StubPage pageKey="businessTax" />} />
-          <Route path="/about" element={<StubPage pageKey="about" />} />
+          <Route path="/about" element={<About />} />
           <Route path="/reviews" element={<StubPage pageKey="reviews" />} />
           <Route path="/contact" element={<StubPage pageKey="contact" />} />
           <Route path="/careers" element={<StubPage pageKey="careers" />} />

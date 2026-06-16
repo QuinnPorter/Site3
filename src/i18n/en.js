@@ -62,6 +62,7 @@ const en = {
       { value: '50', label: 'states served' },
     ],
     offices: 'Offices in Lawrence & Methuen, MA',
+    photoAlt: 'The JBS leadership team at a company event',
   },
   finder: {
     eyebrow: 'Service finder',
@@ -286,8 +287,89 @@ const en = {
         role: 'Partner',
         bio: 'Brand ambassador and tax strategist with an approachable, people-first style for homebuyers and beyond.',
       },
+      {
+        name: 'Michael Peluso',
+        role: 'Partner',
+        bio: 'Co-Founder of the Controller Practice with 15+ years of experience in public accounting.',
+      },
     ],
     cta: 'Meet the team',
+    photoAlt: 'The full JBS team gathered at a company event',
+  },
+  brandFilm: {
+    eyebrow: 'Our story',
+    title: 'Beyond the bottom line',
+    body: 'More than accountants — a team investing in the people and businesses behind every number. Watch the story and see us in the community.',
+    play: 'Watch the film',
+    posterAlt: 'A JBS advisor presenting at a financial education seminar',
+    communityAlt: 'Attendees at a JBS community financial seminar',
+    galaAlt: 'The JBS team at a client appreciation event',
+  },
+  aboutPage: {
+    eyebrow: 'About JBS',
+    title: 'Built on family, integrity, and community',
+    subtitle:
+      'From a local tax practice in 2005 to a nationwide financial services firm — the same people, the same promise, at a bigger scale.',
+    overview: {
+      eyebrow: 'Our story',
+      title: 'Two decades of moving money forward',
+      body: [
+        'Established in 2005, JBS grew from a single local tax practice into a nationwide financial services firm with a large team of experts. We specialize in business taxes, bookkeeping, and payroll — built on clear communication, reliable delivery, and solutions tailored to each client.',
+        'What hasn’t changed is who we are: a family-rooted, bilingual team that treats your numbers like our own and shows up for the people and businesses behind them.',
+      ],
+      photoAlt: 'The JBS leadership team at a company event',
+    },
+    values: {
+      eyebrow: 'What we stand for',
+      title: 'The principles behind every number',
+      items: [
+        {
+          title: 'Family',
+          body: 'A family-rooted team that treats your goals as personal — relationships first, transactions second.',
+        },
+        {
+          title: 'Integrity',
+          body: 'Straight answers and dependable work. We tell you what you need to know, in plain language, in English or Spanish.',
+        },
+        {
+          title: 'Community',
+          body: 'We invest in the people and small businesses around us through education, access, and showing up.',
+        },
+      ],
+    },
+    leadership: {
+      eyebrow: 'Leadership',
+      title: 'Meet our leadership',
+      subtitle: 'Decades of combined expertise, one shared commitment to you.',
+      photoAlt: 'The full JBS team gathered at a company event',
+      leaders: [
+        {
+          name: 'Robinson Aquino',
+          role: 'Partner & CEO',
+          bio: 'Angel investor and entrepreneur reshaping small-business finance through a new model of financial leadership.',
+        },
+        {
+          name: 'Alvaro Tejada, CFA',
+          role: 'CFO & Head of FP&A',
+          bio: 'Nearly a decade in commercial underwriting and banking, having structured and analyzed over $100M in loans.',
+        },
+        {
+          name: 'Alex Mercedes',
+          role: 'Founder & President',
+          bio: 'Founded JBS in 2005 and has since guided tens of thousands of families and business owners through tax compliance.',
+        },
+        {
+          name: 'Tobit Garcia',
+          role: 'Partner',
+          bio: 'Tax strategist with an approachable, people-first style — specializing in strategies for homebuyers and beyond.',
+        },
+        {
+          name: 'Michael Peluso',
+          role: 'Partner',
+          bio: 'Co-Founder of the Controller Practice with 15+ years of experience in public accounting.',
+        },
+      ],
+    },
   },
   finalCta: {
     title: 'Let’s move your money forward',

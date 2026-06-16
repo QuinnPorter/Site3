@@ -43,6 +43,7 @@ const es = {
       { value: '50', label: 'estados atendidos' },
     ],
     offices: 'Oficinas en Lawrence y Methuen, MA',
+    photoAlt: 'El equipo de liderazgo de JBS en un evento de la empresa',
   },
   finder: {
     eyebrow: 'Buscador de servicios',
@@ -267,8 +268,89 @@ const es = {
         role: 'Socio',
         bio: 'Embajador de marca y estratega fiscal con un estilo cercano y centrado en las personas, para compradores de vivienda y más.',
       },
+      {
+        name: 'Michael Peluso',
+        role: 'Socio',
+        bio: 'Cofundador de la práctica de Controller con más de 15 años de experiencia en contabilidad pública.',
+      },
     ],
     cta: 'Conoce al equipo',
+    photoAlt: 'Todo el equipo de JBS reunido en un evento de la empresa',
+  },
+  brandFilm: {
+    eyebrow: 'Nuestra historia',
+    title: 'Más allá de los números',
+    body: 'Más que contadores: un equipo que invierte en las personas y los negocios detrás de cada número. Mira la historia y conócenos en la comunidad.',
+    play: 'Ver el video',
+    posterAlt: 'Un asesor de JBS presentando en un seminario de educación financiera',
+    communityAlt: 'Asistentes a un seminario financiero comunitario de JBS',
+    galaAlt: 'El equipo de JBS en un evento de agradecimiento a clientes',
+  },
+  aboutPage: {
+    eyebrow: 'Sobre JBS',
+    title: 'Construido sobre familia, integridad y comunidad',
+    subtitle:
+      'De una práctica fiscal local en 2005 a una firma de servicios financieros a nivel nacional — la misma gente, la misma promesa, a mayor escala.',
+    overview: {
+      eyebrow: 'Nuestra historia',
+      title: 'Dos décadas haciendo crecer tu dinero',
+      body: [
+        'Fundada en 2005, JBS pasó de ser una práctica fiscal local a una firma de servicios financieros a nivel nacional con un amplio equipo de expertos. Nos especializamos en impuestos de negocios, contabilidad y nómina — con comunicación clara, entregas confiables y soluciones a la medida de cada cliente.',
+        'Lo que no ha cambiado es quiénes somos: un equipo bilingüe con raíces familiares que trata tus números como propios y acompaña a las personas y los negocios detrás de ellos.',
+      ],
+      photoAlt: 'El equipo de liderazgo de JBS en un evento de la empresa',
+    },
+    values: {
+      eyebrow: 'Lo que defendemos',
+      title: 'Los principios detrás de cada número',
+      items: [
+        {
+          title: 'Familia',
+          body: 'Un equipo con raíces familiares que toma tus metas como propias — primero las relaciones, después las transacciones.',
+        },
+        {
+          title: 'Integridad',
+          body: 'Respuestas claras y trabajo confiable. Te decimos lo que necesitas saber, en lenguaje sencillo, en inglés o español.',
+        },
+        {
+          title: 'Comunidad',
+          body: 'Invertimos en las personas y los pequeños negocios a nuestro alrededor mediante educación, acceso y presencia.',
+        },
+      ],
+    },
+    leadership: {
+      eyebrow: 'Liderazgo',
+      title: 'Conoce a nuestro liderazgo',
+      subtitle: 'Décadas de experiencia combinada, un compromiso compartido contigo.',
+      photoAlt: 'Todo el equipo de JBS reunido en un evento de la empresa',
+      leaders: [
+        {
+          name: 'Robinson Aquino',
+          role: 'Socio y CEO',
+          bio: 'Inversionista ángel y emprendedor que está transformando las finanzas de los pequeños negocios con un nuevo modelo de liderazgo financiero.',
+        },
+        {
+          name: 'Alvaro Tejada, CFA',
+          role: 'CFO y Director de FP&A',
+          bio: 'Casi una década en banca y análisis de crédito comercial, habiendo estructurado y analizado más de $100M en préstamos.',
+        },
+        {
+          name: 'Alex Mercedes',
+          role: 'Fundador y Presidente',
+          bio: 'Fundó JBS en 2005 y desde entonces ha guiado a decenas de miles de familias y dueños de negocios en el cumplimiento fiscal.',
+        },
+        {
+          name: 'Tobit Garcia',
+          role: 'Socio',
+          bio: 'Estratega fiscal con un estilo cercano y centrado en las personas — especializado en estrategias para compradores de vivienda y más.',
+        },
+        {
+          name: 'Michael Peluso',
+          role: 'Socio',
+          bio: 'Cofundador de la práctica de Controller con más de 15 años de experiencia en contabilidad pública.',
+        },
+      ],
+    },
   },
   finalCta: {
     title: 'Hagamos crecer tu dinero',
