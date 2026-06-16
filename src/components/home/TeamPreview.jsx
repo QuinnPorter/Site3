@@ -3,16 +3,7 @@ import { useLanguage } from '../../i18n/LanguageContext.jsx'
 import Section, { SectionHeader } from '../ui/Section.jsx'
 import Reveal from '../ui/Reveal.jsx'
 import Button from '../ui/Button.jsx'
-
-function initials(name) {
-  return name
-    .replace(/,.*$/, '')
-    .split(/\s+/)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join('')
-    .toUpperCase()
-}
+import teamGroup from '../../assets/photos/team-group.jpg'
 
 export default function TeamPreview() {
   const { t } = useLanguage()
@@ -22,23 +13,29 @@ export default function TeamPreview() {
     <Section>
       <SectionHeader eyebrow={team.eyebrow} title={team.title} subtitle={team.subtitle} />
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {team.members.map((m, i) => (
-          <Reveal key={m.name} delay={i * 0.08}>
-            <div className="group h-full rounded-3xl border border-navy-100 bg-white p-6 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-glow">
-              {/* Photo slot — replace gradient avatar with a real headshot */}
-              <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-navy-900 to-navy-700">
-                <span className="font-sans text-4xl font-bold text-teal-300">{initials(m.name)}</span>
-                <span className="absolute bottom-2 right-2 rounded-full bg-black/30 px-2 py-0.5 text-[10px] text-white/70 backdrop-blur">
-                  photo slot
-                </span>
-              </div>
-              <h3 className="mt-5 text-lg font-bold text-navy-900">{m.name}</h3>
-              <p className="text-sm font-semibold text-teal-700">{m.role}</p>
-              <p className="mt-2 text-sm text-navy-500">{m.bio}</p>
-            </div>
-          </Reveal>
-        ))}
+      <div className="mt-12 grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+        {/* Full-team group photo */}
+        <Reveal>
+          <div className="overflow-hidden rounded-3xl shadow-soft ring-1 ring-navy-900/10">
+            <img
+              src={teamGroup}
+              alt={team.photoAlt}
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
+        </Reveal>
+
+        {/* Names + roles */}
+        <Reveal delay={0.1}>
+          <ul className="divide-y divide-navy-100">
+            {team.members.map((m) => (
+              <li key={m.name} className="flex items-baseline justify-between gap-4 py-3.5">
+                <span className="font-display text-lg font-bold text-navy-900">{m.name}</span>
+                <span className="shrink-0 text-sm font-semibold text-teal-700">{m.role}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </div>
 
       <div className="mt-10 text-center">

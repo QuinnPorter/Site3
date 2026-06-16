@@ -5,6 +5,7 @@ import ServicesOverview from '../components/home/ServicesOverview.jsx'
 import StatsBand from '../components/home/StatsBand.jsx'
 import SavingsEstimator from '../components/home/SavingsEstimator.jsx'
 import WhyJBS from '../components/home/WhyJBS.jsx'
+import BrandFilm from '../components/home/BrandFilm.jsx'
 import BusinessTiers from '../components/home/BusinessTiers.jsx'
 import Reviews from '../components/home/Reviews.jsx'
 import BilingualHighlight from '../components/home/BilingualHighlight.jsx'
@@ -24,6 +25,7 @@ export default function Home() {
       <StatsBand />
       <SavingsEstimator />
       <WhyJBS />
+      <BrandFilm />
       <BusinessTiers />
       <Reviews />
       <BilingualHighlight />

@@ -27,3 +27,15 @@ Thumbs.db
 
 # Local tooling
 .claude/
+
+# Raw source media — originals stay local; optimized versions live in
+# src/assets/photos/ and public/media/ (both committed). Anchored to repo
+# root so nested committed assets are unaffected.
+/*.JPG
+/*.jpg
+/*.jpeg
+/*.png
+/*.mp4
+/*.mov
+/*.download/
+/_source-media/
